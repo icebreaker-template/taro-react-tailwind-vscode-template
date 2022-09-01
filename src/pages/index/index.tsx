@@ -10,8 +10,8 @@ const Index = () => {
   return (
     <>
       <View className='[&_.u-count-down\_\_text]:!text-red-400'>
-        <View></View>
-        <View></View>
+        <View>1</View>
+        <View>2</View>
         <View></View>
         <View></View>
         <View>
