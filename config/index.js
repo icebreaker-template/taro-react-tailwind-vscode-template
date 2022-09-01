@@ -2,6 +2,9 @@ const {
   TaroWeappTailwindcssWebpackPluginV5
 } = require("weapp-tailwindcss-webpack-plugin");
 
+const isH5 = process.env.TARO_ENV === "h5";
+const isApp = process.env.TARO_ENV === "rn";
+const WeappTailwindcssDisabled = isH5 || isApp;
 const config = {
   projectName: "myApp",
   date: "2022-8-23",
@@ -42,8 +45,7 @@ const config = {
           namingPattern: "module", // 转换模式，取值为 global/module
           generateScopedName: "[name]__[local]___[hash:base64:5]"
         }
-      },
-
+      }
     },
     webpackChain(chain) {
       chain.merge({
@@ -53,7 +55,8 @@ const config = {
             args: [
               {
                 // 注意这一行(不传默认 react)
-                framework: "react" // 'vue2' / 'vue3'
+                framework: "react", // 'vue2' / 'vue3'
+                disabled: WeappTailwindcssDisabled
               }
             ]
           }
