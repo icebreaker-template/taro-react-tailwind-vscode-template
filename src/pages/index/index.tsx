@@ -1,12 +1,11 @@
 import { useState } from "react";
 import { View } from "@tarojs/components";
 
-import { replaceJs } from "weapp-tailwindcss-webpack-plugin/replace";
 import "./index.scss";
 
 const Index = () => {
   const [flag] = useState(true);
-  const className = replaceJs("bg-[#123456]");
+  const className = "bg-[#123456]";
   return (
     <>
       <View className='[&_.u-count-down\_\_text]:!text-red-400'>

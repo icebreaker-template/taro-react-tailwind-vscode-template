@@ -1,6 +1,4 @@
-const {
-  TaroWeappTailwindcssWebpackPluginV5
-} = require("weapp-tailwindcss-webpack-plugin");
+import { UnifiedWebpackPluginV5 } from "weapp-tailwindcss-webpack-plugin";
 
 const isH5 = process.env.TARO_ENV === "h5";
 const isApp = process.env.TARO_ENV === "rn";
@@ -51,11 +49,10 @@ const config = {
       chain.merge({
         plugin: {
           install: {
-            plugin: TaroWeappTailwindcssWebpackPluginV5,
+            plugin: UnifiedWebpackPluginV5,
             args: [
               {
-                // 注意这一行(不传默认 react)
-                framework: "react", // 'vue2' / 'vue3'
+                appType: 'taro',
                 disabled: WeappTailwindcssDisabled
               }
             ]
@@ -91,7 +88,7 @@ const config = {
   }
 };
 
-module.exports = function(merge) {
+export default function (merge) {
   if (process.env.NODE_ENV === "development") {
     return merge({}, config, require("./dev"));
   }
