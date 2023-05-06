@@ -1,7 +1,7 @@
 {
   "miniprogramRoot": "./dist",
-  "projectname": "myApp",
-  "description": "s",
+  "projectname": "taro-react-tailwind-vscode-template",
+  "description": "",
   "appid": "touristappid",
   "setting": {
     "urlCheck": true,

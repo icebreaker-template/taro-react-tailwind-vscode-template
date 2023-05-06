@@ -14,15 +14,12 @@ const Index = () => {
         <View></View>
         <View></View>
         <View>
-          <View className='u-count-down__text'>u-count-down__text</View>
+          <View className='u-count-down__text'>taro-react-tailwind-vscode-template</View>
         </View>
       </View>
-      <View className='after:content-["*"] after:ml-0.5 after:text-red-500'></View>
-      <View className='after:content-[*] after:ml-0.5 after:text-red-500 aspect-w-16'>
-        <View>aspect</View>
-        <View>w</View>
-        <View>16</View>
-      </View>
+      <View className="after:content-['presudo'] after:ml-0.5 after:text-red-500"></View>
+      <View className="after:content-['我是伪元素'] after:ml-0.5 after:text-red-500"></View>
+
       <View
         className='bg-gray-100 dark:bg-zinc-800 h-10 w-10'
         hoverClass='bg-red-500 dark:bg-green-500'
