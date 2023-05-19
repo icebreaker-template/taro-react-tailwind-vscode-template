@@ -1,4 +1,4 @@
-import { UnifiedWebpackPluginV5 } from "weapp-tailwindcss-webpack-plugin";
+import { UnifiedWebpackPluginV5 } from "weapp-tailwindcss/webpack";
 
 const isH5 = process.env.TARO_ENV === "h5";
 const isApp = process.env.TARO_ENV === "rn";
