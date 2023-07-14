@@ -5,7 +5,11 @@ import "./index.scss";
 
 const Index = () => {
   const [flag, setFlag] = useState(true);
-  const className = clsx(flag ? "bg-[#123456]" : "bg-[#654321]", "text-white","after:content-['click_here_to_switch_className']");
+  const className = clsx(
+    flag ? "bg-[#123456]" : "bg-[#654321]",
+    "text-white",
+    "after:content-['click_here_to_switch_className']"
+  );
   const logoClass = clsx(
     "bg-[url(https://pic1.zhimg.com/v2-3ee20468f54bbfefcd0027283b21aaa8_720w.jpg)] bg-[length:100%_100%] bg-no-repeat w-screen h-[41.54vw]"
   );
@@ -15,7 +19,7 @@ const Index = () => {
       <View className='[&_.u-count-down\_\_text]:!text-sky-400'>
         <View></View>
         <View>
-          <View className='u-count-down__text text-[50px] text-center before:content-["taro-react-tailwind-vscode-template"]'></View>
+          <View className="u-count-down__text text-[50px] text-center before:content-['taro-react-tailwind-vscode-template']"></View>
         </View>
       </View>
       <View className='space-y-4'>
