@@ -12,6 +12,7 @@ Webpack5启动时报告Invalid option from onResolve() callback in plugin "scanI
 这个是 tarojs 自己的问题，详见这个 [issues/13767](https://github.com/NervJS/taro/issues/13767) -->
 
 > 记得关闭开发者工具 IDE 代码热重载
+>
+## 核心插件 [weapp-tailwindcss](https://github.com/sonofmagic/weapp-tailwindcss-webpack-plugin)
 
-核心插件 [weapp-tailwindcss-webpack-plugin](https://github.com/sonofmagic/weapp-tailwindcss-webpack-plugin)
 相关文档地址 <https://weapp-tw.icebreaker.top/>
