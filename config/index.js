@@ -1,8 +1,8 @@
 import { UnifiedWebpackPluginV5 } from "weapp-tailwindcss/webpack";
 
-const isH5 = process.env.TARO_ENV === "h5";
-const isApp = process.env.TARO_ENV === "rn";
-const WeappTailwindcssDisabled = isH5 || isApp;
+// const isH5 = process.env.TARO_ENV === "h5";
+// const isApp = process.env.TARO_ENV === "rn";
+// const WeappTailwindcssDisabled = isH5 || isApp;
 
 const config = {
   projectName: 'taro-react-tailwind-vscode-template',
@@ -64,7 +64,8 @@ const config = {
             args: [
               {
                 appType: 'taro',
-                disabled: WeappTailwindcssDisabled
+                // disabled: WeappTailwindcssDisabled,
+                rem2rpx: true
               }
             ]
           }
