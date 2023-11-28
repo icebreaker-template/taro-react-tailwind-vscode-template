@@ -1,5 +1,5 @@
 import { UnifiedWebpackPluginV5 } from "weapp-tailwindcss/webpack";
-
+import path from 'path'
 // const isH5 = process.env.TARO_ENV === "h5";
 // const isApp = process.env.TARO_ENV === "rn";
 // const WeappTailwindcssDisabled = isH5 || isApp;
@@ -30,6 +30,9 @@ const config = {
     prebundle: {
       enable: false,
     }
+  },
+  alias: {
+    'styled-system': path.resolve(__dirname, '..', 'styled-system')
   },
   cache: {
     enable: false // Webpack 持久化缓存配置，建议开启。默认配置请参考：https://docs.taro.zone/docs/config-detail#cache

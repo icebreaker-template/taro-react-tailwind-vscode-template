@@ -20,8 +20,17 @@
     "resolveJsonModule": true,
     "typeRoots": [
       "node_modules/@types"
-    ]
+    ],
+    "paths": {
+      "styled-system/*": [
+        "styled-system/*"
+      ]
+    }
   },
-  "include": ["./src", "./types"],
+  "include": [
+    "./src",
+    "./types",
+    "styled-system"
+  ],
   "compileOnSave": false
 }
