@@ -37,7 +37,7 @@
   ],
   "author": "",
   "dependencies": {
-    "@babel/runtime": "^7.23.7",
+    "@babel/runtime": "^7.23.8",
     "@tarojs/components": "3.6.22",
     "@tarojs/helper": "3.6.22",
     "@tarojs/plugin-framework-react": "3.6.22",
@@ -61,11 +61,11 @@
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.11",
     "@tarojs/cli": "3.6.22",
     "@tarojs/webpack5-runner": "3.6.22",
-    "@types/node": "^20.10.6",
-    "@types/react": "^18.2.47",
+    "@types/node": "^20.11.5",
+    "@types/react": "^18.2.48",
     "@types/webpack-env": "^1.18.4",
-    "@typescript-eslint/eslint-plugin": "^6.18.0",
-    "@typescript-eslint/parser": "^6.18.0",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
     "babel-preset-taro": "3.6.22",
     "eslint": "^8.56.0",
     "eslint-config-taro": "3.6.22",
@@ -80,7 +80,7 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3",
     "weapp-ide-cli": "^1.0.1",
-    "weapp-tailwindcss": "^3.0.5",
+    "weapp-tailwindcss": "^3.0.7",
     "webpack": "5.89.0"
   }
 }
