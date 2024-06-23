@@ -1,5 +1,5 @@
 import { UnifiedWebpackPluginV5 } from "weapp-tailwindcss/webpack";
-
+import utwm from 'unplugin-tailwindcss-mangle/webpack'
 // const isH5 = process.env.TARO_ENV === "h5";
 // const isApp = process.env.TARO_ENV === "rn";
 // const WeappTailwindcssDisabled = isH5 || isApp;
@@ -71,6 +71,13 @@ const config = {
           }
         }
       });
+      // chain.merge({
+      //   plugin: {
+      //     install: {
+      //       plugin: utwm
+      //     }
+      //   }
+      // })
     }
   },
   h5: {

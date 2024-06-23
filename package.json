@@ -28,7 +28,9 @@
     "dev:jd": "npm run build:jd -- --watch",
     "dev:quickapp": "npm run build:quickapp -- --watch",
     "open": "weapp open -p .",
-    "postinstall": "weapp-tw patch"
+    "postinstall": "weapp-tw patch",
+    "prepare": "tw-patch install",
+    "extract": "tw-patch extract"
   },
   "browserslist": [
     "last 3 versions",
@@ -77,8 +79,10 @@
     "react-refresh": "^0.14.2",
     "stylelint": "^16.6.1",
     "tailwindcss": "^3.4.4",
+    "tailwindcss-patch": "^3.0.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.2",
+    "unplugin-tailwindcss-mangle": "^3.0.0",
     "weapp-ide-cli": "^1.0.1",
     "weapp-tailwindcss": "^3.3.1",
     "webpack": "5.92.1"
