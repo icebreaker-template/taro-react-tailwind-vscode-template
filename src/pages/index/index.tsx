@@ -28,7 +28,7 @@ const Index = () => {
         <View className="after:mx-auto after:text-center after:block after:content-['这是一个小程序taro_react_tailwindcss的模板'] after:text-lime-700"></View>
         <View
           className="rounded-lg p-1 bg-gray-100 dark:bg-zinc-800 h-20 w-40 after:text-xs after:content-['this_is_a_hover_block.have_a_try!']"
-          hoverClass='bg-red-500 dark:bg-green-500'
+          hoverClass='bg-red-500 text-[#fff] dark:bg-green-500'
         ></View>
 
         <View
