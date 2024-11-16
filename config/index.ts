@@ -57,7 +57,8 @@ export default defineConfig(async (merge, { command, mode }) => {
             namingPattern: 'module', // 转换模式，取值为 global/module
             generateScopedName: '[name]__[local]___[hash:base64:5]'
           }
-        }
+        },
+
       },
       webpackChain(chain) {
         chain.resolve.plugin('tsconfig-paths').use(TsconfigPathsPlugin)
@@ -75,6 +76,11 @@ export default defineConfig(async (merge, { command, mode }) => {
             }
           }
         });
+      },
+      sassLoaderOption: {
+        sassOptions: {
+          silenceDeprecations: ['legacy-js-api', 'import'],
+        }
       }
     },
     h5: {
