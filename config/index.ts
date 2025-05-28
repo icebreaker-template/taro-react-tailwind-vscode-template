@@ -3,6 +3,7 @@ import { defineConfig, type UserConfigExport } from '@tarojs/cli'
 import TsconfigPathsPlugin from 'tsconfig-paths-webpack-plugin'
 import devConfig from './dev'
 import prodConfig from './prod'
+// https://docs.taro.zone/docs/envs#processenvtaro_env
 // const isH5 = process.env.TARO_ENV === "h5";
 // const isApp = process.env.TARO_ENV === "rn";
 // const WeappTailwindcssDisabled = isH5 || isApp;
