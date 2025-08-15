@@ -7,7 +7,7 @@ import prodConfig from './prod'
 // const isH5 = process.env.TARO_ENV === "h5";
 // const isApp = process.env.TARO_ENV === "rn";
 // const WeappTailwindcssDisabled = isH5 || isApp;
-export default defineConfig(async (merge, { command, mode }) => {
+export default defineConfig(async (merge) => {
   const baseConfig: UserConfigExport = {
     projectName: 'taro-react-tailwind-vscode-template',
     date: '2023-5-6',
@@ -70,7 +70,6 @@ export default defineConfig(async (merge, { command, mode }) => {
               args: [
                 {
                   appType: 'taro',
-                  // disabled: WeappTailwindcssDisabled,
                   rem2rpx: true
                 }
               ]

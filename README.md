@@ -5,6 +5,13 @@
 
 在 taro 里使用 tailwindcss 的模板项目
 
+## 使用方式
+
+1. `pnpm i` 安装包
+2. 把 `project.config.json` 中的 `appid` 换成你自己的
+3. `pnpm dev:weapp` 运行微信小程序
+4. 微信开发者工具中，导入这个目录即可预览
+
 <!-- ## 命令行报错问题
 
 Webpack5启动时报告Invalid option from onResolve() callback in plugin "scanImports": "importer"
