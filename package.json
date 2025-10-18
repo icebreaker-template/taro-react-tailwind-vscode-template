@@ -8,6 +8,12 @@
     "typescript": true,
     "css": "sass"
   },
+  "browserslist": [
+    "last 3 versions",
+    "Android >= 4.1",
+    "ios >= 8"
+  ],
+  "author": "",
   "scripts": {
     "build:weapp": "taro build --type weapp",
     "build:swan": "taro build --type swan",
@@ -30,12 +36,6 @@
     "open": "weapp open -p .",
     "postinstall": "weapp-tw patch"
   },
-  "browserslist": [
-    "last 3 versions",
-    "Android >= 4.1",
-    "ios >= 8"
-  ],
-  "author": "",
   "dependencies": {
     "@babel/runtime": "^7.28.3",
     "@tarojs/components": "4.1.5",
@@ -77,12 +77,12 @@
     "postcss-rem-to-responsive-pixel": "^6.0.2",
     "react-refresh": "^0.17.0",
     "stylelint": "^16.23.1",
-    "tailwindcss": "^3.4.17",
+    "tailwindcss": "^3.4.18",
     "ts-node": "^10.9.2",
     "tsconfig-paths-webpack-plugin": "^4.2.0",
     "typescript": "^5.9.2",
-    "weapp-ide-cli": "^3.0.0",
-    "weapp-tailwindcss": "^4.2.5",
+    "weapp-ide-cli": "^4.0.0",
+    "weapp-tailwindcss": "^4.5.1",
     "webpack": "5.101.2"
   }
 }
