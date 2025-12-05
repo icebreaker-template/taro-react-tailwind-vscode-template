@@ -83,12 +83,14 @@
     "tsconfig-paths-webpack-plugin": "^4.2.0",
     "typescript": "^5.9.3",
     "weapp-ide-cli": "^4.1.0",
-    "weapp-tailwindcss": "^4.8.8",
+    "weapp-tailwindcss": "^4.8.9",
     "webpack": "5.101.2"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
-      "@weapp-tailwindcss/merge-v3"
+      "@weapp-tailwindcss/merge-v3",
+      "weapp-tailwindcss"
     ]
-  }
+  },
+  "packageManager": "pnpm@10.24.0"
 }
